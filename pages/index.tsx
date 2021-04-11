@@ -4,9 +4,6 @@ import styled from 'styled-components';
 // importing components
 import { Head } from '@components/core';
 
-// importing libraries
-import fetchSampledata from '@lib/fetchSampleData';
-
 const Root = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -14,41 +11,41 @@ const Root = styled.div`
 
 const Home: React.FC = () => {
   // set data as a state with type Data(which is declaired in global.d.ts).
-  const [data, setData] = React.useState<Data>({ hello: '' });
-  const [loading, setLoading] = React.useState<boolean>(false);
-
-  const handleFetch = async () => {
-    try {
-      setLoading(true);
-      const data = await fetchSampledata();
-
-      setData(data as Data);
-    } catch (err) {
-      // error handling
-    } finally {
-      setLoading(false);
-    }
-  };
 
   return (
     <>
       <Head>
-        <title>My Home Page</title>
+        <title>WebProject</title>
       </Head>
-      <Root>
-        hello world
-        <div className="w-10 h-10 bg-black mx-auto my-4" />
-        <button
-          className="bg-black text-white py-2 px-4 rounded-lg"
-          onClick={() => handleFetch()}
-          disabled={loading}
-        >
-          get data
-        </button>
-        <p className="text-lg">
-          {loading ? 'loading...' : JSON.stringify(data, null, 2)}
-        </p>
-      </Root>
+      <main className="my-16 mx-auto max-w-7xl px-4 sm:my-48">
+        <div className="text-center">
+          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span className="block xl:inline">중간고사</span>
+            <span className="block text-indigo-600 xl:inline"> 홈페이지</span>
+          </h1>
+          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+            React를 사용한 웹 사이트 만들기
+          </p>
+          <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+            <div className="rounded-md shadow">
+              <a
+                href="/information"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+              >
+                자세한 설명 보러가기
+              </a>
+            </div>
+            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <a
+                href="/profile"
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+              >
+                프로필 보러가기
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
     </>
   );
 };
