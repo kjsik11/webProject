@@ -7,17 +7,25 @@ import { Head } from '@components/core';
 const Root = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  .videoBox {
+    padding-top: ${(9 / 16) * 100}%;
+  }
+
+  .titleShadow {
+    text-shadow: 0em 0.08em 0em rgb(0 0 0 / 10%);
+  }
 `;
 
 const Home: React.FC = () => {
   // set data as a state with type Data(which is declaired in global.d.ts).
 
   return (
-    <>
+    <Root>
       <Head>
         <title>WebProject</title>
       </Head>
-      <main className="my-16 mx-auto max-w-7xl px-4 sm:my-48">
+
+      <main className="my-4 mx-auto max-w-7xl px-4 sm:my-16">
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
             <span className="block xl:inline">중간고사</span>
@@ -45,8 +53,18 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className="relative mt-8 md:mt-20 w-full videoBox rounded-md overflow-hidden">
+          <iframe
+            className="w-full h-full absolute inset-0"
+            frameBorder="0"
+            allow="encrypted-media"
+            allowFullScreen
+            title="youtube"
+            src={`https://www.youtube.com/embed/1YQxYFCILEg?enablejsapi=1`}
+          />
+        </div>
       </main>
-    </>
+    </Root>
   );
 };
 
