@@ -12,8 +12,8 @@ const Root = styled.div`
 
 const menuItems = [
   {
-    label: 'Information',
-    path: '/information',
+    label: 'Team Project',
+    path: '/team-project',
   },
   {
     label: 'Portfolio',

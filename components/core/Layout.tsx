@@ -31,12 +31,10 @@ const Layout: React.FC<Props> = ({ children }) => {
   }, []);
 
   return (
-    <Root className="font-noto mx-auto min-h-full pt-20">
+    <Root className="relative font-noto w-full min-h-full pt-20">
       <Header />
-      <main className="relative">{children}</main>
-      {/* <MenuModal open={displayModal} close={closeModal}>
-        children
-      </MenuModal> */}
+
+      <main className="relative min-h-[1024px]">{children}</main>
       <Footer />
     </Root>
   );
