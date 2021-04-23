@@ -169,7 +169,7 @@ const Portfolio = () => {
         <div>
           <div>
             <a
-              href="https://church-jongsik.vercel.app/"
+              href="https://tlcommunity.co.kr/"
               target="blank"
               className="inline-block"
             >

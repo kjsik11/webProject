@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             <div className="rounded-md shadow">
               <a
                 href="/team-project"
-                className="w-full flex items-center justify-center px-2 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-2"
               >
                 팀 프로젝트 설명 보러가기
               </a>
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
               <a
                 href="/profile"
-                className="w-full flex items-center justify-center px-2 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-2 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-2"
               >
                 프로필 보러가기
               </a>
