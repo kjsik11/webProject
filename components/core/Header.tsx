@@ -23,6 +23,11 @@ const menuItems = [
     label: 'Projects',
     path: '/projects',
   },
+
+  {
+    label: 'Team',
+    path: '/team',
+  },
 ];
 
 const Header: React.FC = () => {

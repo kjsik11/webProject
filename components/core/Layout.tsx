@@ -13,8 +13,6 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ children }) => {
-  const { displayModal, closeModal } = useUI();
-  usePreventScroll({ isDisabled: !displayModal });
   const [hasScrolled, setHasScrolled] = React.useState<boolean>(false);
 
   React.useEffect(() => {
