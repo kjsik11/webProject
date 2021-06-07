@@ -53,14 +53,14 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-8 md:mt-20 w-full videoBox rounded-md overflow-hidden">
+        <div className="relative mt-8 md:mt-20 p-12 w-full videoBox rounded-md overflow-hidden">
           <iframe
-            className="w-full h-full absolute inset-0"
+            className="w-4/5 h-4/5 absolute inset-0 mx-auto"
             frameBorder="0"
             allow="encrypted-media"
             allowFullScreen
             title="youtube"
-            src={`https://www.youtube.com/embed/1YQxYFCILEg?enablejsapi=1`}
+            src="https://www.youtube.com/embed/79_LQKHOksg"
           />
         </div>
       </main>
