@@ -17,14 +17,15 @@ const Project: React.FC<Props> = ({ projectItem }) => {
 
   return (
     <div className="max-w-5xl mx-auto my-12">
-      <iframe
+      임의로 주석처리된 iframe 입니다.
+      {/* <iframe
         className="w-full max-w-5xl mx-auto h-64 sm:h-96 md:h-120 mb-20 rounded-md"
         frameBorder="0"
         allow="encrypted-media"
         allowFullScreen
         title="youtube"
         src={`https://www.youtube.com/embed/${youtubeId}?enablejsapi=1`}
-      />
+      /> */}
       <ul
         role="list"
         className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8 m-4 mb-20"

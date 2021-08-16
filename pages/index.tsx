@@ -54,14 +54,15 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="relative mt-8 md:mt-20 p-12 w-full videoBox rounded-md overflow-hidden">
-          <iframe
+          임의로 주석처리된 iframe 입니다.
+          {/* <iframe
             className="w-4/5 h-4/5 absolute inset-0 mx-auto"
             frameBorder="0"
             allow="encrypted-media"
             allowFullScreen
             title="youtube"
             src="https://www.youtube.com/embed/79_LQKHOksg"
-          />
+          /> */}
         </div>
       </main>
     </Root>
